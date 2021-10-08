@@ -1,0 +1,87 @@
+{% load i18n %}
+
+{% load auth %}
+
+<style type="text/css">
+	.padding-main {
+		box-sizing: border-box;
+		padding: 50px;
+	}
+
+	.background-main {
+		background: black;
+	}
+
+	.container-fluid {
+		width: 100%;
+	}
+
+	.d-flex {
+		display: flex;
+	}
+
+	.direction-col {
+		flex-direction: column;
+	}
+
+	.alig-center {
+		align-self: center;
+	}
+
+	.size-logo {
+		width: 150px;
+	}
+
+	.margin-logo {
+		margin: 50px 0;
+	}
+
+	.padding-text {
+		padding: 50px;
+	}
+
+	.color-white {
+		color: white
+	}
+
+	.d-block {
+		display: block;
+	}
+
+	.padding-text-register {
+		padding: 0px 50px
+	}
+
+	.link-color-red { 
+		color: red;
+	}
+</style>
+
+<main class = 'container-fluid d-flex direction-col padding-main background-main'>
+	<img
+		class = 'size-logo alig-center margin-logo' 
+		src="data:image/png;base64,{% get_logo_base_64 %}"
+	>
+
+	<div>
+		<p class = 'alig-center padding-text color-white'>
+			{% blocktrans %}
+
+				Hello dear user, press the link that has been sent to you below to access the registration form. If you register, you will have a free month of subscription, in which you can enjoy all our content
+
+			{% endblocktrans %}
+		</p>
+
+		<div
+			class = 'padding-text-register'
+		>
+			<a 
+				class = "link-color-red" 
+				href="{{ link }}"
+			>
+				REGISTRATION
+			</a>
+		</div>
+
+	</div>
+</main>

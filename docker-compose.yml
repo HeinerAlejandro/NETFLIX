@@ -1,0 +1,31 @@
+version: '3'
+services:
+    netflix_backend:
+        build: ./backend
+        volumes:
+            - ./backend:/netflix/backend/
+            - assets:/netflix/backend/assets/
+        ports:
+            - '8000:8000'
+        command: "gunicorn -c config/gunicorn/conf.py backend.wsgi:application"
+    netflix_frontend:
+        build: ./frontend
+        volumes: 
+            - ./frontend/:/netflix/frontend/
+        ports:
+            - '3000:3000'
+        command: "npm start"
+    nginx_web:
+        image: nginx:1.21.1-alpine
+        restart: always
+        volumes: 
+            - ./backend/config/nginx/conf.d/:/etc/nginx/conf.d/
+            - assets:/netflix/backend/assets/
+        ports: 
+            - '80:80'
+        depends_on: 
+            - netflix_backend
+volumes:
+    .: null
+    assets: null
+

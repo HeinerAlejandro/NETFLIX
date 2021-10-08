@@ -1,0 +1,41 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "images-series" : [
+    {
+      "src" : "/static/media/falls.2126bfeb.jpg",
+      "type" : "image/jpg"
+    },
+    {
+      "src" : "/static/media/dark.89b3e28b.jpg",
+      "type" : "image/jpg"
+    },
+    {
+      "src" : "/static/media/gravity.cae070b6.jpg",
+      "type" : "image/jpg"
+    },
+    {
+      "src" : "/static/media/poster.fdbc0ae7.jpg",
+      "type" : "image/jpg"
+    },
+    {
+      "src" : "/static/media/A1on6o1-ziL._SL1500_.4a8b94e7.jpg",
+      "type" : "image/jpg"
+    },
+    {
+      "src" : "/static/media/orange1.311fd3f0.jpeg",
+      "type" : "image/jpeg"
+    }
+  ]
+}

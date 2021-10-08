@@ -1,0 +1,33 @@
+.modal-content{
+    height: 100vh;
+}
+
+.modal-netflix{
+    height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  scrollbar-width: thin;
+}
+
+#header .text,
+#list-recent-movies h1 .text{
+  font-weight: bold;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.section-padding {
+	padding: 30px 79px 50px 79px;
+}
+
+@media (max-width: 752px){
+	.section-padding {
+		padding: 0;	
+	}
+}

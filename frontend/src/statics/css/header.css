@@ -1,0 +1,138 @@
+#header {
+    height : 104vh;
+}
+
+.nav{
+    z-index : 100;
+    position : absolute;
+    left : 3vw;
+    width: 95vw;
+    height: 80px;
+    align-self: center;
+}
+
+#list-services{
+   align-self : flex-end;
+}
+
+.header-filled-card{
+    width : 100vw;
+    height: 90vh;
+}
+
+.header-brand-card{
+    width :  100vw;
+    height: 85vh;
+}
+
+.header-netflix-card{
+    width: 100vw;
+    height: 100vh;
+    background-position: -18% 0;
+    background-repeat: no-repeat;
+}
+
+.nav img{
+    margin-top: 25px;
+    height: 35px;
+}
+
+@media (orientation : portrait) and (max-width : 576px){
+
+    #header{
+        height: 94.5vw;
+    }
+
+    .actions{
+        width : 70vw;
+        display : flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .actions .button{
+        padding : 10px;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-brand-card{
+        height: 65vw;
+    }
+
+    .header-netflix-card{
+        height : 100vw;
+        background-position: 1.5% 0;
+        
+    }
+
+    .header-filled-card{
+        height: 75vw;
+    }
+}
+
+@media (orientation : landscape) and (min-width : 576px){
+
+    #header{
+        height: 109.5vh;
+    }
+
+    .header-netflix-card{
+        background-position: -10% 0;
+       
+    }
+}
+
+@media (orientation : portrait) and (min-width : 576px){
+
+    #header{
+        height: 645px;
+    }
+
+    .header-brand-card{
+        height: 65vw;
+    }
+
+    .header-netflix-card{
+        height: 535px;
+    }
+
+    .header-filled-card{
+        height: 535px;
+    }
+}
+
+@media (min-width : 992px) and (orientation : landscape){
+    #header{
+        height: 110vh;
+    }
+
+    .header-filled-card{
+        height: 90vh;
+    }
+
+    .header-netflix-card{
+       height: 90vh;
+    }
+
+    .header-brand-card{
+        height: 85vh;
+    }
+}
+
+@media (orientation : portrait) and (min-width : 992px){
+    #header{
+        height: 800px;
+    }
+
+    .header-filled-card{
+        height: 700px;
+    }
+
+    .header-netflix-card{
+       height: 700px;
+    }
+}

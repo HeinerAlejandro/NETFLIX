@@ -1,0 +1,17 @@
+.over-scroll {
+    height: 65vh;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 17px;
+}
+
+#content {
+    width: 60vw !important;
+}
+
+.scrollable {
+    max-height: 50vh !important;
+    overflow-y: scroll !important;
+}
+
+

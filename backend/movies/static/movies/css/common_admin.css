@@ -1,0 +1,51 @@
+.shadow-card {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.title-object {
+    width: 280px;
+    height: 50px;
+    background: #ad1d16f9;
+    box-sizing: content-box;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.title-object > a {
+    color: white;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.title-object > a:hover {
+    color: gray;
+}
+
+.content-info {
+    margin-top: 10px !important;
+}
+
+.content-elements {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.select-all {
+    width: 100%;
+    height: 50px;
+}
+
+.select-all-content {
+    width: 210px;
+    height: inherit;
+    background: #ad1d16f9;
+    float: right;
+}
+
+.select-all-content p,  .select-all-content div{
+    display: inline-block;
+    margin-top: 8px;
+    color: #310200f9;
+}

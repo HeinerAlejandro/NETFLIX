@@ -1,0 +1,22 @@
+.text{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+}
+
+.text-1{
+    font-weight: bold;
+}
+
+.card-netflix{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+    transition : .5s;
+}
+
+
+.miniature {
+    width : 70px;
+}

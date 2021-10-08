@@ -1,0 +1,19 @@
+{% load admin_list_custom %}
+
+<div class = 'content-actions shadow-card'>
+
+    <div class = 'actions'>
+        {% if action_form and actions_on_top and cl.show_admin_actions %}
+            {% admin_actions_custom %}
+        {% endif %}
+    </div>
+    
+    <div class = 'press-button'>
+        <button 
+            type = 'button'
+            class = "shadow-card"
+        >
+            Actions
+        </button>
+    </div>
+</div>

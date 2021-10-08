@@ -1,0 +1,242 @@
+#list-recent-movies{
+  padding: 0 80px 0 80px;
+}
+
+.movie-item{
+  position : relative;
+}
+
+.icon-filled-card{
+  display : none;
+  margin : 0 0 50px 0;
+  width : 35px;
+  height : 35px;
+}
+
+.play-icon{
+  width: 30px;
+  height: 30px;
+  margin : auto;
+}
+
+.padding-movie{
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+* { box-sizing: border-box; }
+
+.masonry-container{
+  padding: 50px;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.list-item {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.movie-item .list-seasons{
+
+  height: 70px;
+  overflow-y: scroll;
+}
+
+.list-season{
+  list-style: none;
+}
+
+.list-seasons{
+  margin : 0;
+}
+
+.season{
+  width: 100%;
+  background-color : #d50303;
+  border-bottom : 1px solid #e51f16;
+  
+}
+
+.season-selected {
+  background-color : #74100c;
+}
+
+.season-title p{
+  margin : 0;
+}
+
+.list-capitule{
+  width : 100%;
+}
+
+.capitule{
+
+  justify-content: space-around;
+  align-items: center;
+  margin : 0 15px 0 15px;
+  
+}
+
+.capitule div, .capitule h5{
+  display: inline-block;
+}
+
+.card-open{
+
+  transform: translateX(270px);
+  transition: .5s;
+}
+
+.card-vertical-open{
+  transform: translateY(-210px);
+  transition: .5s;
+}
+
+.card-cap-open{
+  transform: translateX(290px);
+  transition : .5s;
+}
+
+.card-cap-open-left{
+  left : 0;
+  transform: translateX(-290px);
+}
+
+.card-cap{
+  flex-direction : column;
+}
+
+.content-description-capitule{
+  width: 150px;
+}
+
+.content-description-capitule h6{
+
+  margin : 15px 0 0 0;
+  font-weight : bold;
+}
+
+.content-description-capitule p{
+  font-size: x-small;
+  height: 40px;
+  margin-top: 5px;
+  overflow-y: scroll;
+}
+
+.content-img-capitule{
+  display: inline-block;
+}
+
+.mask{
+  visibility: hidden;
+  display : inline-block;
+}
+
+.content-img-capitule:hover .mask{
+  background-color: rgba(146, 123, 123, 0.7);
+  visibility: visible;
+}
+
+.rotate{
+  transform: rotate(90deg);
+}
+
+.card-filled{
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-filled .text{
+  margin-bottom: 50px;
+}
+
+.more-visible{
+  z-index : 100;
+}
+
+.close-icon{
+  width: 100%;
+  height: auto;
+}
+
+.close-icon img{
+  box-sizing: content-box;
+  width: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  float : right;
+}
+
+.close-icon img:hover{
+  fill : red;
+}
+
+@media (min-width : 800px){
+  
+}
+
+@media (max-width : 799px){
+  .icon-filled-card{
+    display: block;
+    transition: .5s;
+  }
+
+  .icon-filled-card:hover{
+    cursor : pointer;
+  }
+
+  .card-open{
+    transform: initial;
+    z-index : 4 !important;
+    animation-name: movile-card-open;
+    animation-duration: .5s;
+  }
+
+  .card-cap-open{
+    transform: initial;
+    z-index : 5 !important;
+    animation-name: movile-card-open;
+    animation-duration: .5s;
+  }
+
+  .content-loading{
+    margin : auto;
+
+    animation: rotate 1s infinite;
+  }
+
+  @keyframes rotate{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes movile-card-open {
+    
+    50%{
+      transform: translateX(-100%);
+    }
+    to{
+      z-index : 4 !important;
+      transform: initial;
+    }
+  }
+
+}
+
+@media (max-width : 576px){
+
+  #list-recent-movies{
+    box-sizing: border-box;
+    padding:0;
+  }
+}

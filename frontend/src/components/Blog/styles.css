@@ -1,0 +1,46 @@
+
+.info-blog{
+    box-sizing : border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-blog{
+    width : 100%;
+    height: auto;
+}
+
+.content-img-blog{
+    margin-top: 20px;
+    display: none;
+}
+
+.info{
+    width : 50%;
+}
+
+.info .text{
+    width: 100%;
+    color: gray;
+}
+
+.modal-body p{
+    color : gray;
+}
+
+.modal-body img{
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (max-width : 900px){
+
+    #blog {
+        height: 100vh;
+        position : relative;
+    }
+
+    .content-img-blog{
+        display: flex;
+    }
+}

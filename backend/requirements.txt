@@ -1,0 +1,11 @@
+Django==2.2.2
+django-allauth==0.44.0
+django-ckeditor==5.9.0
+django-cors-headers==2.4.0
+django-environ==0.4.5
+django-js-asset==1.2.2
+django-rest-auth==0.9.5
+djangorestframework==3.9.0
+gunicorn==19.9.0
+Pillow==7.0.0
+coverage==6.0.1

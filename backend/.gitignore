@@ -1,0 +1,5 @@
+**/migrations/**	
+/.build
+
+**/*.pyc
+*-env/

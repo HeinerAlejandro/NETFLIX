@@ -1,0 +1,28 @@
+{% load static %}
+
+<header class = 'movie-card shadow-card'>
+    <div class = 'header-section shadow-card'>
+
+        {{item.action_checkbox.1}}
+        
+        <img 
+            src = "{{ item.portada.1 }}"
+        />
+    </div>
+
+    <div class = 'body-section'>
+        <div class = 'title-object shadow-card'>
+            {{ item.name.1 }}
+        </div>
+
+        <div class = 'content-info'>
+            <p><strong>{{ item.number_seasons.0 }}</strong> : {{ item.number_seasons.1 }}</p>
+            <p><strong>{{ item.has_new_histories.0 }}</strong> : {{ item.has_new_histories.1 }}</p>
+            <div class = 'date-movie'>{{ item.date.1 }}</div>
+        </div>
+    </div>
+    
+</header>
+
+
+
